@@ -1,0 +1,330 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+.hamburger-menu {
+    position: relative;
+}
+
+.hamburger {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+    padding: 10px;
+    position: relative;
+    z-index: 1;
+}
+
+.line {
+    background-color: white;
+    display: block;
+    height: 2px;
+    margin-bottom: 5px;
+    width: 25px;
+}
+
+.nav-menu {
+    background-color: #f1f1f1;
+    display: none;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    right: 0;
+    top: 100%;
+    width: 200px;
+}
+
+.nav-menu a {
+    color:white;
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.nav-menu a:hover {
+    background-color: #ddd;
+}
+.banner{
+    width: 100%;
+    min-height:5vh;
+    background-color: black;
+    padding: 10px 10%;
+    position: relative;
+}   
+.logo{
+   width: 140px;
+    /* height: 143px;  */
+}
+nav{
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 0px 15px;
+}
+ul{
+    margin-top: -40px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-weight: 400;
+   transition: 0.3s;
+}
+nav ul li a:hover{
+    color: gray;
+}
+.hover{
+    transition: 0.1s ease-in-out;
+    
+  
+}
+.hover:hover{
+   
+           display:inline-block ;
+           border-bottom: 2px solid #5bc7ca;
+           padding-bottom: 3px;
+}
+.specific-home{
+    display:inline-block ;
+    border-bottom: 2px solid #5bc7ca;
+    padding-bottom: 3px;
+    
+}
+.login-btn{
+    display: inline-block;
+    text-decoration: none;
+   color: white;
+   margin-right: 15px;
+   font-weight: 600; 
+  background-color:  #5bc7ca;
+  border: 2px solid  #5bc7ca;
+  border-radius: 30px;
+    padding: 14px 30px;
+    font-size: 14px;
+    border-top-right-radius: 0px;
+    transition: 0.5s;
+    border-bottom-left-radius: 0px;
+}
+
+.login-btn:hover{
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    background-color: white;
+    color: #5bc7ca;
+    border: none;
+}
+.btn{
+ margin-top: -50px;
+}
+main{
+    height: 500vh;
+    overflow: hidden;
+    background-image: url(background.jpg);
+    background-size: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+}
+section{
+    height: 150px;
+    position: relative;
+    top: 50px;
+}
+#logo{
+    position: absolute;
+    top: 300px;   
+    border-radius: 50px;
+    transform: scale(1);
+    transition: transform 1s;
+}
+#logo:hover{
+    box-shadow: 0 0 15px grey;
+    transform: scale(0.9);
+}
+.container{
+    width: 400px;
+    height: 300px;
+    perspective: 800px;
+}
+.card{
+    height: 100%;
+    width: 100%;
+    position: relative;
+       transition: transform 1500ms;
+       transform-style: preserve-3d;
+}
+.card:hover{
+    cursor:pointer;
+    transform: rotateY(180deg);
+}
+.front,
+.back {
+    height: 100%;
+    width: 100%;
+    border-radius: 50px;
+    box-shadow: 0 0 5px  #5bc7ca;
+    position: absolute;
+    backface-visibility: hidden;
+}
+.back{
+    background-color: rgb(135, 130, 130);
+    transform: rotateY(180deg);
+    padding: 30px;
+    display: flex;
+    justify-content: space-evenly;
+}
+#front_1{
+    background-image: url(Suzuki_Cultus_-_PNG.png);
+    opacity: 0.75;
+    background-color: rgb(135, 130, 130);
+}
+#front_2{
+    background-image: url(SUZUKI-Wagon-R.jpg);
+    opacity: 0.75;
+    background-color: rgb(135, 130, 130);
+}
+#front_3{
+    background-image: url(SUZUKI-JIMMY.jpg);
+    opacity: 0.75;
+    background-color: rgb(135, 130, 130);
+}
+#front_4{
+    background-image: url(SUZUKI-SWIFT.jpg);
+    opacity: 0.75;
+    background-color: rgb(135, 130, 130);
+}
+h2{
+    color: white;
+    text-align: center;
+    padding-bottom: 40px;
+    font-family: sans-serif;
+    font-style: oblique;
+    letter-spacing: 5px;
+    margin-top: 20px;
+}
+.model{
+    width: 400px;
+    text-decoration: none;
+    color: white;
+    font-weight: 600; 
+    background-color:  #5bc7ca;
+    border: 2px solid  #5bc7ca;
+    border-radius: 30px;
+    padding:14px 30px;
+    font-size:x-large;
+    border-top-right-radius: 0px;
+    transition: 0.5s;
+    border-bottom-left-radius: 0px;
+}
+.model:hover{
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    background-color: white;
+    color: #5bc7ca;
+    border: none;
+}
+.card_back_icons{
+    height: 235px;
+    width: 45px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.card_back_text{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.wrapper{
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.wrapper a{
+    position: relative;
+    letter-spacing: 1px;
+    font-size:x-large;
+    color:  #5bc7ca;
+    padding: 10px 10px;
+    transition: 2s;
+    overflow: hidden;
+}
+.wrapper a:hover{
+    background-color:  #5bc7ca;
+    color: black;
+    box-shadow: 0 0 5px  #5bc7ca,
+                0 0 25px  #5bc7ca,
+                0 0 50px  #5bc7ca,
+                0 0 200px  #5bc7ca;
+    -webkit-box-reflect: below 1px linera-gradient(transparent, black);
+}
+hr{
+    width: 100%;
+    border: 0;
+    border-bottom: 1px solid whitesmoke;
+    margin: 10px auto;
+}
+
+
+@media(max-width: 600px){
+    h2{
+        letter-spacing: 2px;
+    }
+}
+@media (max-width:450px){
+    main{
+        height: 300vh;
+    }
+    .container{
+        width: 350px;
+    }
+    h2{
+        letter-spacing: 2px;
+    }
+}
+
+.hamburger-menu{
+    display: none;
+}
+@media(max-width:600px){
+    .hamburger-menu{
+        display:inline;
+        
+    }
+    .hamburger{
+        display: inline;
+    }
+    .banner ul{
+        display: none;
+    }
+    .login-btn{
+        display: none;
+     }
+     @media(width:600px){
+        .hamburger-menu{
+            display:none;
+            
+        }
+        .hamburger{
+            display: none;
+        }
+        .banner ul{
+            display: inline;
+        }
+    }
